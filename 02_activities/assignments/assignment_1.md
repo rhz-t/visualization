@@ -48,3 +48,54 @@ Checklist:
 - [ ] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via our Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
+
+#Monday June 1 Session Notes: 
+#Data visualization is dependent on (1) context - where and how it is used (2) audience - who is interested (3) data structure - what information does our data capture (e.g. quantities, relationships)
+
+#making a basic figure with matplotlib
+import numpy as np 
+import matplotlib.pyplot as plt
+import pandas as pd
+import scipy
+import PIL 
+import requests
+
+np. randon.seed(613)
+x=np.arange(50)
+y=np.random.randint(0,100,50)
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.scatter (x,y)
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.bar (x,y)
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.plot (x,y)
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.hist(y)
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.plot (x,y)
+ax. set_title ('Total growth over time')
+ax. set_ylabel ('Total growth')
+ax. set_xlabel ('Years since start')
+fig.tight_layout()
+
+font1=('family': 'sans-serif','color':'blue','size':20) 
+font2=('family':'monospace',"color':'green",'size' :14)
+
+‹=plt.subplots(figsize=(5,3))
+pt(x,y)
+t_title ('Total growth over time',fontdict=font1,loc='left")
+t_ylabel ('Total growth',fontdict=font2)
+t_xlabel('Years since start',fontdict=font2)
+ight_layout()
+
+fig, ax=plt.subplots(figsize=(5,3))
+ax.scatter (x,y,marker='*',color='indigo')
+
+#Wednesday June 3 Session Notes: 
+Choosing the right visualization 
+3 important qualities (1) aesthetic (2) substantive (3) perceptual  
